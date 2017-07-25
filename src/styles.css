@@ -1,0 +1,113 @@
+@import "compass/css3";
+
+.nav.navbar-nav li a {
+    color: black !important;
+	font-family:rockwell !important;
+	font-size:18px !important;
+	color:white !important;
+}
+
+.navbar.navbar-default.navbar-fixed-top{
+	padding-top:0px !important;
+	height:68px !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	margin-right: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	text-align:center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #145A32}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+ .btnanim:hover{
+    border:none;
+	border:2px solid white;
+    -webkit-border-radius:5px;
+    cursor:pointer;
+   	margin:6px;
+    padding:5px 5px;
+    -webkit-transition: all 100ms ease;
+}
+
+img:hover{
+	cursor:pointer;
+}
+
+.my_container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.my_container:hover .image {
+  opacity: 0.3;
+}
+
+.my_container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  white-space:nowrap;
+  background-color: #EBF5FB;
+  color: black;
+  font-size: 15px;
+  font-family:rockwell;
+  width:100%;
+  padding: 16px 32px 0px 0px;
+}
+
+.blink {
+  animation-duration: 1100ms;    /*blinking speed decreases and increase */
+  animation-name: animate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+}
+  
