@@ -110,4 +110,19 @@ img:hover{
     opacity: 0;
   }
 }
+
+.carousel{
+    background: #1F618D;
+    margin-top: 20px;
+    height: 435px;
+    width: 530px;
+    margin-left: -80px;
+}
+.carousel .item{
+    min-height: 435px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+    min-width: 530px;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
   

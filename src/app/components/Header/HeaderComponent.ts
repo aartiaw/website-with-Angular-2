@@ -5,4 +5,6 @@ import {Component} from '@angular/core';
     templateUrl:'./header.html'
 })
 
-export class HeaderForAll{}
+export class HeaderForAll{
+ 
+}

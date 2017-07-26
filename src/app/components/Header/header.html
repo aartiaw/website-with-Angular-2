@@ -44,11 +44,11 @@
 				</li>
 			</ul>
 			
-			<form class="navbar-form navbar-left">
+			<div class="navbar-form navbar-left">
 			<input type="text" class="form-control" style="margin-left:80px;" placeholder="Category name">
-			</form>
+			</div>
 			
-			<form class="navbar-form navbar-left">
+			<div class="navbar-form navbar-left">
 			     <div class="input-group">
 				    <input type="text" class="form-control" placeholder="Search">
                     <span class="input-group-btn">
@@ -56,16 +56,16 @@
                     </span>
 					
                 </div>
-            </form>
+            </div>
 								  			  
             <div class="dropdown">
 				<img src="https://www.minveedu.com/images/icon_signup_dude.png" height="30px" width="30px">
 				<div class="dropdown-content">
-				<form align="center">
+				<div align="center">
 					<font face="rockwell" color="#979A9A" size="3px" style="padding-right:20px;">Access account to manage orders</font><br><br>
 					<a href="#signUpModel" data-toggle="modal"><label style="color:white;margin-bottom:10px;">Sign Up</label></a>
 					<a href="#loginModel" data-toggle="modal"><label style="color:white;margin-bottom:10px;">Login</label></a>
-				</form>
+				</div>
 				</div>	
 			</div>
         </div>
@@ -73,84 +73,10 @@
 </div>
 
 <div id="signUpModel" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Create New Account</h4>
-                </div>
-				
-                <div class="modal-body">
-                    <form>
-						<div class="form-group">
-							<label>Username</label>
-							<input type="text" class="form-control" placeholder="Name" required autofocus>
-						</div>
-						
-						<div class="form-group">
-							<label>Address</label>
-							<input type="text" class="form-control" placeholder="Address" required>
-						</div>
-					
-						<div class="form-group">
-							<label>Contact Number</label>
-							<input type="text" class="form-control" placeholder="Contact Number" required>
-						</div>
-					
-						<div class="form-group">
-							<label>Email</label>
-							<input type="email" class="form-control" placeholder="Email" required>
-						</div>
-						
-						<div class="form-group">
-							<label>Password</label>
-							<input type="password" class="form-control" placeholder="Password" required>
-						</div>
-
-						<div class="form-group">
-							<label>Re-enter password</label>
-							<input type="password" class="form-control" placeholder="Password" required>
-						</div>
+	<signUp></signUp>
+</div>
 
 
-						
-					<button type="submit" class="btn btn-primary" formaction="">Sign Up</button>
-					</form>
-		       </div>
-			</div>
-        </div>
-    </div>
-
-
-    <div id="loginModel" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Login</h4>
-                </div>
-				
-                <div class="modal-body">
-                    <form>
-						<div class="form-group">
-							<label>Enter username</label>
-							<input type="text" class="form-control" placeholder="Name" required autofocus>
-						</div>
-									
-						<div class="form-group">
-							<label>Password</label>
-							<input type="password" class="form-control" placeholder="Password" required>
-						</div>
-						
-						<div class="checkbox">
-							<label><input type="checkbox"> Remember me</label>
-						</div>
-						
-						<button type="submit" class="btn btn-primary" formaction="LoggedIn.html">Login</button>
-						&nbsp&nbsp&nbsp&nbsp
-						<button type="submit" class="btn btn-primary">Forgot password</button>
-			</form>
-		   </div>
-		</div>
-    </div>
+<div id="loginModel" class="modal fade" role="dialog">
+	<signIn></signIn>
 </div>
