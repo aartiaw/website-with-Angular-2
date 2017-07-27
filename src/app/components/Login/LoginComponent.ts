@@ -8,7 +8,7 @@ import{Services} from '../../Services/AdServices';
 })
 
 export class SignInClass{
-
+    
     SignInForm:FormGroup;
 
     constructor(private formBuilder:FormBuilder, private serviceObj:Services){
@@ -16,17 +16,16 @@ export class SignInClass{
         this.SignInForm = this.formBuilder.group({
             userName : [null,[Validators.required,Validators.minLength(5)]],
             password: [null,[Validators.required]],
+            
         });
     }
 
     onSignInSubmit(username:string,password:any){
         let loggedInUser = {
             userName : username,
-            password : password
+            password : password            
         }
         
         this.serviceObj.loggedInUser(loggedInUser);
     }
-
-    //auth_token = this.serviceObj.getAuthToken();
 }

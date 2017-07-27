@@ -8,8 +8,10 @@ import{Services} from '../../Services/AdServices';
 
 export class PostAdClass{
 
+    adCategories:Array<any>=[];
+
     constructor(private serviceObj:Services){
-        
+        serviceObj.getCategories().subscribe((data:any)=>this.adCategories = data.data.itemList);
     }
 
     postThisAd(title:string,name:string,description:string,category:any){
@@ -19,5 +21,7 @@ export class PostAdClass{
             category:category,
             description:description
         }
+
+        this.serviceObj.postAd(newAd);
     }
 }

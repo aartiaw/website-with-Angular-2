@@ -5,6 +5,4 @@ import {Component} from '@angular/core';
     templateUrl:'./footer.html'
 })
 
-export class FooterForAll{
-    
-}
+export class FooterForAll{}

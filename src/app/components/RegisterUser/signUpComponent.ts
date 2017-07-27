@@ -24,7 +24,7 @@ export class SignUpClass{
             phone: [null,[Validators.required,Validators.minLength(10),Validators.maxLength(10)]]
             }, 
             {
-                validator: PasswordValidation.matchPassword //validation method
+                validator: PasswordValidation.matchPassword //assign value returned by matchPassword() of PasswordValidation
             }
             
             );
@@ -40,8 +40,7 @@ export class SignUpClass{
             email : email,
             phone : phone
        }
-       //console.log(newuser);
-       this.serviceObj.registerUser(newUser);
+      this.serviceObj.registerUser(newUser);
     }
 
 }

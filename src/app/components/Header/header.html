@@ -7,69 +7,72 @@
                 <span class="icon-bar"></span>
             </button>
             
-        </div>
+          </div>
         
         <div id="navbarCollapse" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-			<li><a href="#"><img src="https://png.icons8.com/shopping-bag/color/1600/" height="50px" width="60px" style="margin-top:0px;">
-			<font color="white" size="5px">e-Shop</font></a>
-			</li>
+				<li><a href="#"><img src="https://png.icons8.com/shopping-bag/color/1600/" height="50px" width="60px" style="margin-top:0px;">
+					<font color="white" size="5px">e-Shop</font></a>
+				</li>
 			
 			    <li><a href="#">Home</a></li>
            				
 				<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle" href="#">Electronics<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-					<div class="dropdown-content">
-                        <li><a href="#">Computer</a></li>
-                        <li><a href="#">Laptop</a></li>
-                        <li><a href="#">Washing machine</a></li>
-                        <li><a href="#">Refrigerator</a></li>
-						<li><a href="#">Mobile</a></li>
-						<li><a href="#">Other</a></li>
-					</div>
+						<div class="dropdown-content">
+							<li><a href="#">Computer</a></li>
+							<li><a href="#">Laptop</a></li>
+							<li><a href="#">Washing machine</a></li>
+							<li><a href="#">Refrigerator</a></li>
+							<li><a href="#">Mobile</a></li>
+							<li><a href="#">Other</a></li>
+						</div>
                     </ul>
 				</li>
 				
 				<li class="dropdown">
-				<a data-toggle="dropdown" class="dropdown-toggle" href="#">Home and Living<b class="caret"></b></a>
+					<a data-toggle="dropdown" class="dropdown-toggle" href="#">Home and Living<b class="caret"></b></a>
 					<ul class="dropdown-menu">
-					<div class="dropdown-content">
-						<li><a href="vehicle.html" target="_blank">Vehicle</a></li>
-						<li><a href="#">Furniture</a></li>
-                        <li><a href="#">Clothes</a></li>
-                        <li><a href="#">Real Estate</a></li>
-                        <li><a href="#">Other</a></li>
+						<div class="dropdown-content">
+							<li><a href="vehicle.html" target="_blank">Vehicle</a></li>
+							<li><a href="#">Furniture</a></li>
+							<li><a href="#">Clothes</a></li>
+							<li><a href="#">Real Estate</a></li>
+							<li><a href="#">Other</a></li>
                       </div>
-					  </ul>
+					</ul>
 				</li>
 			</ul>
 			
-			<div class="navbar-form navbar-left">
+		<div class="navbar-form navbar-left">
 			<input type="text" class="form-control" style="margin-left:80px;" placeholder="Category name">
-			</div>
+		</div>
 			
-			<div class="navbar-form navbar-left">
-			     <div class="input-group">
-				    <input type="text" class="form-control" placeholder="Search">
+		<div class="navbar-form navbar-left">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search">
                     <span class="input-group-btn">
                         <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search" style="height:20px"></span></button>
                     </span>
-					
-                </div>
-            </div>
+			</div>
+        </div>
 								  			  
-            <div class="dropdown">
-				<img src="https://www.minveedu.com/images/icon_signup_dude.png" height="30px" width="30px">
-				<div class="dropdown-content">
+        <div class="dropdown">
+			<div [hidden]="authorized">
+				<img src="https://www.minveedu.com/images/icon_signup_dude.png" height="30px" width="30px" >
+			</div>
+
+			<div class="dropdown-content">
 				<div align="center">
 					<font face="rockwell" color="#979A9A" size="3px" style="padding-right:20px;">Access account to manage orders</font><br><br>
 					<a href="#signUpModel" data-toggle="modal"><label style="color:white;margin-bottom:10px;">Sign Up</label></a>
 					<a href="#loginModel" data-toggle="modal"><label style="color:white;margin-bottom:10px;">Login</label></a>
 				</div>
-				</div>	
-			</div>
-        </div>
-    </nav>
+			</div>	
+		</div>
+		
+      </div>
+   </nav>
 </div>
 
 <div id="signUpModel" class="modal fade" role="dialog">
